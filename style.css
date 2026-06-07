@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:white;
+    font-family:Inter,sans-serif;
+    overflow-x:hidden;
+}
+
+#bg{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:2rem;
+}
+
+.hero h1{
+    font-size:clamp(3rem,8vw,6rem);
+    margin-bottom:1rem;
+}
+
+.hero p{
+    max-width:700px;
+    color:#b8b8b8;
+    line-height:1.8;
+}
+
+.album{
+    min-height:100vh;
+
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:5rem;
+    padding:4rem 2rem;
+}
+
+.reverse{
+    flex-direction:row-reverse;
+}
+
+.text{
+    flex:1;
+}
+
+.text h2{
+    font-size:4rem;
+    margin-bottom:.5rem;
+}
+
+.text h3{
+    color:#8a8a8a;
+    margin-bottom:2rem;
+    font-weight:400;
+}
+
+.text p{
+    line-height:2;
+    max-width:550px;
+    color:#d8d8d8;
+}
+
+.album img{
+    width:350px;
+    border-radius:8px;
+    box-shadow:0 0 30px rgba(0,0,0,.4);
+}
+
+.stratosphere{
+    font-family:"Cormorant Garamond",serif;
+}
+
+.camping{
+    font-family:"Space Grotesk",sans-serif;
+}
+
+.epitaph{
+    font-family:"IBM Plex Mono",monospace;
+}
+
+footer{
+    text-align:center;
+    padding:80px 20px;
+    color:#8a8a8a;
+}
+
+footer a{
+    color:white;
+    text-decoration:underline;
+}
+
+@media(max-width:900px){
+
+    .album,
+    .reverse{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .text p{
+        margin:auto;
+    }
+
+    .album img{
+        width:280px;
+    }
+
+    .text h2{
+        font-size:2.5rem;
+    }
+}
